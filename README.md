@@ -1,2 +1,3 @@
-# CICD-1
-A simple flsk projects development and deployment using jenkins and docker
+# A personel portfolio 
+A simple flask project deployed on heroku
+https://shubsportfolio.herokuapp.com/
