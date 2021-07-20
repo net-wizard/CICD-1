@@ -1,5 +1,5 @@
 try:
-    from web import app
+    from app import app
     import unittest
 
 except Exception as e:
