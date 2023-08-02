@@ -1,0 +1,6 @@
+dockerfile
+test_app.py
+*.md
+tmp/
+.gitignore
+Jenkinsfile

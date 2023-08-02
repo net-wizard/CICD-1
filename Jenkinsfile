@@ -24,7 +24,7 @@
                 steps {
                     script {
                         sh '''docker build . -t portfolio-app'''
-                        sh '''docker run -d -p 80:3000 portfolio-app'''
+                        sh '''docker run -d -p 80:8000 portfolio-app'''
                     }
                 }
             }
