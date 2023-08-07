@@ -19,30 +19,32 @@
 
   <style>
     .floating-menu {
-    font-family: sans-serif;
-    background: green;
-    padding: 5px;;
-    width: 130px;
-    z-index: 100;
-    position: fixed;
-    border-radius: 8px;
-    margin-inline: 6px;
-    margin-block: 6px;
-  }
-  .floating-menu a, 
-  .floating-menu h3 {
-    font-size: 0.9em;
-    display: block;
-    margin: 1 1em;
-    color: white;
-  }
+      font-family: sans-serif;
+      background: green;
+      padding: 5px;
+      ;
+      width: 130px;
+      z-index: 100;
+      position: fixed;
+      border-radius: 8px;
+      margin-inline: 6px;
+      margin-block: 6px;
+    }
+
+    .floating-menu a,
+    .floating-menu h3 {
+      font-size: 0.9em;
+      display: block;
+      margin: 1 1em;
+      color: white;
+    }
   </style>
 
   <ul class="floating-menu">
     <li><a href="#banner">Banner</li></br>
-      <li><a href="#features">Profiles</li></br>
-        <li><a href="#portfolio">Skills</li></br>
-        <li><a href="#experience">Experience</li></br>
+    <li><a href="#features">Profiles</li></br>
+    <li><a href="#portfolio">Skills</li></br>
+    <li><a href="#experience">Experience</li></br>
   </ul>
 
   <section class="w3l-bootstrap-header" id="banner">
@@ -88,25 +90,46 @@
               <p class="my-4 mb-5">Senior Associate @Genpact</p><br>
 
 
-      <style>
-        .libutton {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 7px;
-          text-align: center;
-          outline: none;
-          text-decoration: none !important;
-          color: #ffffff !important;
-          width: 200px;
-          height: 32px;
-          border-radius: 16px;
-          background-color: #0A66C2;
-          font-family: "SF Pro Text", Helvetica, sans-serif;
-        }
-      </style>
-<a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=shubham-thorat-2020" target="_blank">Follow on LinkedIn</a>
+              <style>
+                .libutton {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  padding: 7px;
+                  text-align: center;
+                  outline: none;
+                  text-decoration: none !important;
+                  color: #ffffff !important;
+                  width: 200px;
+                  height: 32px;
+                  border-radius: 16px;
+                  background-color: #0A66C2;
+                  font-family: "SF Pro Text", Helvetica, sans-serif;
+                }
 
+                .container143 {
+                  height: 200px;
+                  position: relative;
+                  top: -9%;
+                  left: 457px;
+
+                }
+
+                .vertical-center143 {
+                  margin: 0;
+                  top: 50%;
+                  -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                }
+              </style>
+
+              <div class="container143">
+                <div class="vertical-center143">
+                  <a class="libutton"
+                    href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=shubham-thorat-2020"
+                    target="_blank">Follow on LinkedIn</a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -319,24 +342,24 @@
                 </figure>
               </a>
             </div>
-              <div class="product">
-                <a href="{{url_for('static', filename='/Skill/ansible.jpg')}}" data-lightbox="example-set">
-                  <figure>
-                    <img src="{{url_for('static', filename='/Skill/ansible.jpg')}}" class="img-responsive" alt="" />
-                  </figure>
-                </a>
-  
-              </div>
-              <div class="product">
-                <a href="{{url_for('static', filename='/Skill/kubernates.jpg')}}" data-lightbox="example-set"
-                  data-title="Java">
-                  <figure>
-                    <img src="{{url_for('static', filename='/Skill/kubernates.jpg')}}" class="img-responsive" alt="" />
-                  </figure>
-                </a>
-  
-              </div>
-              <div class="product">
+            <div class="product">
+              <a href="{{url_for('static', filename='/Skill/ansible.jpg')}}" data-lightbox="example-set">
+                <figure>
+                  <img src="{{url_for('static', filename='/Skill/ansible.jpg')}}" class="img-responsive" alt="" />
+                </figure>
+              </a>
+
+            </div>
+            <div class="product">
+              <a href="{{url_for('static', filename='/Skill/kubernates.jpg')}}" data-lightbox="example-set"
+                data-title="Java">
+                <figure>
+                  <img src="{{url_for('static', filename='/Skill/kubernates.jpg')}}" class="img-responsive" alt="" />
+                </figure>
+              </a>
+
+            </div>
+            <div class="product">
               <a href="{{url_for('static', filename='/Skill/Docker.jpeg')}}" data-lightbox="example-set"
                 data-title="Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.">
                 <figure>
@@ -386,7 +409,7 @@
                 </figure>
               </a>
             </div>
-            
+
             <div class="product">
               <a href="{{url_for('static', filename='/Skill/py.jpeg')}}" data-lightbox="example-set"
                 data-title="Python">
