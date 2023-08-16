@@ -15,7 +15,6 @@
                 steps {
                     script {
                         sh '''docker stop $(docker ps -a -q)'''
-                        sh '''docker rm $(docker ps -aq)'''
                         sh '''docker rmi portfolio-app'''
                     }
                 }
@@ -24,7 +23,7 @@
                 steps {
                     script {
                         sh '''docker build . -t portfolio-app'''
-                        sh '''docker run -d -p 80:8000 portfolio-app'''
+                        sh '''docker run --rm -d -p 80:8000 portfolio-app'''
                     }
                 }
             }
